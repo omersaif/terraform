@@ -16,10 +16,10 @@ workflows:
      steps:
      - init
      - plan:
-         extra_args: ["-var-file", "prod.tfvars"]
+         extra_args: []
   staging:
    plan:
      steps:
      - init
      - plan:
-         extra_args: ["-var-file", "stag.tfvars"]
+         extra_args: []
